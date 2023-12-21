@@ -17,7 +17,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
     methods:{
       initThree() {
         const scene = new THREE.Scene()
-        scene.background = new THREE.Color('#000')
+        scene.background = new THREE.Color('#3874b9')
   
         const canvas = document.querySelector('#three')
         canvas.width = window.innerWidth;
