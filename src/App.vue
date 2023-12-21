@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <flip-image/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FlipImage from './components/FlipImage.vue';
+// import DiscoverThree from './components/DiscoverThree.vue';
+// import ThreeDemo from './components/ThreeDemo.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // DiscoverThree,
+    // ThreeDemo,
+    FlipImage
+}
 }
 </script>
 
@@ -23,6 +26,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

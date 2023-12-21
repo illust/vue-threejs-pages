@@ -1,4 +1,20 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+module.exports = {
+  transpileDependencies: true,
+  configureWebpack:{
+    module: {
+      rules: [
+        {
+          test: /\.(glb|gltf)$/i,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 10000,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  }
+}
