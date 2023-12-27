@@ -22,7 +22,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history', // 去掉url中的#
-  base: "https://github.com/illust/vue-threejs-pages",
+  base: "/vue-threejs-pages/",
   scrollBehavior: () => ({
     y: 0
   }),

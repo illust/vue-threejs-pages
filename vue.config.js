@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? 'https://github.com/illust/vue-threejs-pages' // note the trailing slash
+  ? '/vue-threejs-pages/' // note the trailing slash
   : '/',
   transpileDependencies: true,
   configureWebpack:{
