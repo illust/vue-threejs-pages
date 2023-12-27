@@ -10,7 +10,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
   
   export default {
-    name: 'ThreeDemo',
+    name: 'FlipImage',
     props: {
       msg: String
     },
