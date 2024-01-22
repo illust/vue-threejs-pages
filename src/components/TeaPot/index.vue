@@ -97,14 +97,14 @@ methods:{
     } 
     },
     onWindowResize(){
-    this.renderer.setSize(window.innerWidth,window.innerHeight)
-    this.camera.aspect = window.innerWidth / window.innerHeight
-    this.camera.updateProjectionMatrix()
-    this.render()
+      this.renderer.setSize(window.innerWidth,window.innerHeight)
+      this.camera.aspect = window.innerWidth / window.innerHeight
+      this.camera.updateProjectionMatrix()
+      this.render()
     },
     render(){
-    this.createNewTeapot()
-    this.renderer.render(this.scene, this.camera)
+      this.createNewTeapot()
+      this.renderer.render(this.scene, this.camera)
     },
     createNewTeapot() {
         this.geometry = new TeapotGeometry(this.teapotSize,

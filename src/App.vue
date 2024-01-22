@@ -5,19 +5,10 @@
 </template>
 
 <script>
-// import FlipImage from './components/FlipImage.vue';
-// import DiscoverThree from './components/DiscoverThree.vue';
-// import ThreeDemo from './components/ThreeDemo.vue';
-// import TeaPot from './components/TeaPot';
 
 export default {
   name: 'App',
-  components: {
-    // DiscoverThree,
-    // ThreeDemo,
-    // 
-    // TeaPot
-}
+  components: {}
 }
 </script>
 

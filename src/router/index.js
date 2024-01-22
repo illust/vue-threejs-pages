@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "tea-pot"
+    redirect: "cross-word-3d"
   },
   {
     path: "/flip-image",
@@ -17,6 +17,16 @@ const routes = [
     path: "/tea-pot",
     name: "tea-pot",
     component: () => import( /* webpackChunkName: "TeaPot" */ "@/components/TeaPot")
+  },
+  {
+    path: "/texture-demo",
+    name: "texture-demo",
+    component: () => import( /* webpackChunkName: "TextureDemo" */ "@/components/TextureDemo")
+  },
+  {
+    path: "/cross-word-3d",
+    name: "cross-word-3d",
+    component: () => import( /* webpackChunkName: "CrossWord3D" */ "@/components/CrossWord3D")
   }
 ]
 
